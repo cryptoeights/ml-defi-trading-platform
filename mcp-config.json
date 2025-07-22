@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "recall-competitions": {
+      "command": "node",
+      "args": ["server.js"],
+      "cwd": "./recall-mcp-server"
+    }
+  }
+} 

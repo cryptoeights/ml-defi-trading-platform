@@ -1,0 +1,14 @@
+{
+  "name": "recall-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Recall competitions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0"
+  }
+} 
