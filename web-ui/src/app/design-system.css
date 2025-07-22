@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #00C2FF;
+  --accent-color: #FF8A00;
+  --background-color: #121C24;
+  --card-background: #1C2732;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0AEC0;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  --font-family: 'Inter', sans-serif;
+  --header-background: #1A252F;
+  --sidebar-background: #0D141B;
+  --table-header-background: #1F2A35;
+  --table-row-background: #121C24;
+  --table-border-color: #2C3A4B;
+  --table-text-color: #FFFFFF;
+  --table-font-size: 13px;
+  --badge-success: #0FC98B;
+  --badge-warning: #FFA500;
+  --badge-error: #FF4D4F;
+  --badge-info: #00C2FF;
+  --badge-text: #FFFFFF;
+  --badge-radius: 12px;
+  --badge-font-size: 12px;
+  --badge-padding: 2px 8px;
+  --input-background: #1A1F25;
+  --input-border: 1px solid #2C323A;
+  --input-text: #FFFFFF;
+  --input-placeholder: #718096;
+  --input-padding: 10px 12px;
+  --input-radius: 6px;
+  --button-radius: 6px;
+  --button-padding: 10px 16px;
+  --button-font-weight: 500;
+  --button-primary-bg: #00C2FF;
+  --button-primary-color: #FFFFFF;
+  --button-primary-hover: #00A8DA;
+  --button-secondary-bg: #2D3748;
+  --button-secondary-color: #A0AEC0;
+  --button-secondary-hover: #4A5568;
+  --transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+
+.card {
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 16px;
+}
+
+.button-primary {
+  background: var(--button-primary-bg);
+  color: var(--button-primary-color);
+  border: none;
+  border-radius: var(--button-radius);
+  padding: var(--button-padding);
+  font-weight: var(--button-font-weight);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.button-primary:hover {
+  background: var(--button-primary-hover);
+}
+.button-secondary {
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-color);
+  border: none;
+  border-radius: var(--button-radius);
+  padding: var(--button-padding);
+  font-weight: var(--button-font-weight);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.button-secondary:hover {
+  background: var(--button-secondary-hover);
+}
+
+input, textarea {
+  background: var(--input-background);
+  border: var(--input-border);
+  color: var(--input-text);
+  padding: var(--input-padding);
+  border-radius: var(--input-radius);
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--table-font-size);
+}
+thead th {
+  background: var(--table-header-background);
+  color: var(--table-text-color);
+  font-weight: 600;
+  padding: 8px;
+}
+tbody tr {
+  background: var(--table-row-background);
+  transition: var(--transition);
+}
+tbody tr:hover {
+  background: #232f3e;
+}
+td {
+  color: var(--table-text-color);
+  padding: 8px;
+}
+table, th, td {
+  border: 1px solid var(--table-border-color);
+}
+
+.badge-success {
+  background: var(--badge-success);
+  color: var(--badge-text);
+  border-radius: var(--badge-radius);
+  font-size: var(--badge-font-size);
+  padding: var(--badge-padding);
+  display: inline-block;
+}
+.badge-warning {
+  background: var(--badge-warning);
+  color: var(--badge-text);
+  border-radius: var(--badge-radius);
+  font-size: var(--badge-font-size);
+  padding: var(--badge-padding);
+  display: inline-block;
+}
+.badge-error {
+  background: var(--badge-error);
+  color: var(--badge-text);
+  border-radius: var(--badge-radius);
+  font-size: var(--badge-font-size);
+  padding: var(--badge-padding);
+  display: inline-block;
+}
+.badge-info {
+  background: var(--badge-info);
+  color: var(--badge-text);
+  border-radius: var(--badge-radius);
+  font-size: var(--badge-font-size);
+  padding: var(--badge-padding);
+  display: inline-block;
+} 

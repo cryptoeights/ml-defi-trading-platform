@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ThemeProvider, createTheme, CssBaseline, AppBar, Toolbar, Typography, Box } from '@mui/material';
 import ThemeToggle from '../components/ThemeToggle';
 import '../app/globals.css';
+import './design-system.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState<'light' | 'dark'>(
@@ -30,10 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <AppBar position="static">
+          <AppBar position="static" sx={{ background: 'var(--header-background)', color: 'var(--text-primary)', fontFamily: 'var(--font-family)' }}>
             <Toolbar>
               <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                Unified Trading Platform
+                GeckoFit Recall Agent
               </Typography>
               <ThemeToggle mode={mode} toggleTheme={toggleTheme} />
             </Toolbar>
